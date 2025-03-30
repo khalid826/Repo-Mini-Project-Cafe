@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .service-section {
+      height: 540px;
+      display: flex;
+      align-items: center;
+    }
+    .content-box {
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      .content-box {
+        width: calc(50% - 1.5rem);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900" style="background-color: #F2E3D5 ;">
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <div class="w-full pt-32 pb-16 space-y-12">
+    <h1 class="text-4xl font-bold text-center mb-16">Our Services</h1>
+
+    <!-- Event Room Section -->
+    <section class="w-full relative bg-cover bg-center min-h-[600px] flex items-center justify-center" 
+    style="background-image: url('https://dzglkev4c34xb.cloudfront.net/horego.com/cipondoh/restaurant/d-balcon-resto-coffee/other/af1qipmxq2btlagrmwavcit9qsb0z_5akbzcahgscjyt.jpg');">
+    
+    <!-- Full Black Blur Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+  
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-center gap-12">
+      <!-- Title Left -->
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-4xl font-bold text-white mb-4">Event Room</h2>
+      </div>
+      <!-- Content Right -->
+      <div class="content-box bg-white p-8 rounded-lg shadow-lg">
+        <p class="text-lg text-gray-800">
+          Host your special occasions in our elegant event space. Perfect for birthdays, anniversaries, 
+          and gatherings of 10-20 people. Includes private bar service and customizable lighting.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+    <!-- Meeting Room Section -->
+    <section class="w-full relative bg-cover bg-center min-h-[600px] flex items-center justify-center" 
+      style="background-image: url('https://vmo.rocks/wp-content/uploads/2019/10/bealeaf_by_union_roastery_private_room_02.jpg');">
+      
+      <!-- Full Black Blur Overlay -->
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <!-- Content -->
+      <div class="relative max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row-reverse items-center justify-center gap-12">
+        <!-- Title Right -->
+        <div class="md:w-1/2 mb-8 md:mb-0 md:text-right">
+          <h2 class="text-4xl font-bold text-white mb-4">Meeting Room</h2>
+        </div>
+        <!-- Content Left -->
+        <div class="content-box bg-white p-8 rounded-lg shadow-lg">
+          <p class="text-lg text-gray-800">
+            Professional meeting space equipped with modern amenities for productive sessions. 
+            Ideal for corporate meetings, interviews, and team brainstorming.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- Booking Section -->
+<section class="w-full bg-[#9E5334] py-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <!-- Title Left -->
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-4xl font-bold text-white mb-4">Make a Reservation</h2>
+        <p class="text-xl text-white">
+          Book our spaces for your next event, meeting, or just dine-in. 
+        </p>
+      </div>
+      <!-- Form Right -->
+      <div class="md:w-1/2 w-full bg-white p-8 rounded-lg shadow-lg">
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-gray-700 font-medium mb-1">Full Name</label>
+              <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1">Phone Number</label>
+              <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1">Date</label>
+              <input type="date" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-1">Number of People</label>
+              <input type="number" min="1" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500" required>
+            </div>
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium mb-1">Service Type</label>
+            <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+              <option>Event Room</option>
+              <option>Meeting Room</option>
+              <option>Private Dining</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full bg-[#F9C06A] hover:bg-[#e0a859] text-black font-bold py-3 px-4 rounded-lg transition">
+            Submit Booking
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
